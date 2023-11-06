@@ -13,39 +13,39 @@
 
         default_layer {
             bindings = <
-        &gresc     &kp GRAVE              &kp N1  &kp N2       &kp N3             &kp N4     &kp N5  &kp N6  &kp N7     &kp N8   &kp N9    &kp N0  &kp MINUS  &kp EQUAL  &kp BACKSPACE  &kp BACKSPACE
-  &kp C_VOL_UP       &kp TAB               &kp Q   &kp W        &kp E              &kp R      &kp T   &kp Y   &kp U      &kp I    &kp O     &kp P   &kp LBKT   &kp RBKT  &kp BACKSLASH
-  &kp C_VOL_DN         &mo 4               &kp A   &kp S        &kp D              &kp F      &kp G   &kp H   &kp J      &kp K    &kp L  &kp SEMI    &kp SQT    &kp RET
-&kp LEFT_SHIFT         &kp Z               &kp X   &kp C        &kp V              &kp B      &kp B   &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT      &mo 2
-     &kp LCTRL  &kp LEFT_ALT  &mt LEFT_GUI SPACE   &mo 1  &lt 1 SPACE  &kp RIGHT_COMMAND  &kp RCTRL
+&gresc          &kp GRAVE     &kp N1              &kp N2  &kp N3       &kp N4             &kp N5     &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS  &kp EQUAL  &kp BACKSPACE  &kp BACKSPACE
+&kp C_VOL_UP    &kp TAB       &kp Q               &kp W   &kp E        &kp R              &kp T      &kp Y   &kp U   &kp I      &kp O    &kp P     &kp LBKT   &kp RBKT   &kp BACKSLASH
+&kp C_VOL_DN    &mo 4         &kp A               &kp S   &kp D        &kp F              &kp G      &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT    &kp RET
+&kp LEFT_SHIFT  &kp Z         &kp X               &kp C   &kp V        &kp B              &kp B      &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT  &mo 2
+&kp LCTRL       &kp LEFT_ALT  &mt LEFT_GUI SPACE  &mo 1   &lt 1 SPACE  &kp RIGHT_COMMAND  &kp RCTRL
             >;
         };
 
         raise {
             bindings = <
- &none             &kp TILDE                 &kp F1           &kp F2            &kp F3             &kp F4          &kp F5            &kp F6             &kp F7          &kp F8           &kp F9  &kp F10  &kp F11  &kp F12  &trans  &trans
- &none                 &none                 &trans           &trans         &kp MINUS           &kp PLUS       &kp EQUAL             &none      &kp BACKSPACE    &kp UP_ARROW       &kp DELETE    &none    &none    &none  &trans
- &none                &trans         &kp LEFT_BRACE  &kp RIGHT_BRACE         &kp COMMA            &kp DOT  &kp UNDERSCORE             &none     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW    &none    &none   &trans
-&trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp AMPERSAND  &kp LEFT_BRACKET  &kp RIGHT_BRACKET       &kp SLASH  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES          &trans           &trans   &trans   &trans    &none
-&trans                &trans                 &trans           &trans            &trans             &trans          &trans
+&none   &kp TILDE             &kp F1                 &kp F2           &kp F3            &kp F4             &kp F5          &kp F6            &kp F7             &kp F8          &kp F9           &kp F10  &kp F11  &kp F12  &trans  &trans
+&none   &none                 &trans                 &trans           &kp MINUS         &kp PLUS           &kp EQUAL       &none             &kp BACKSPACE      &kp UP_ARROW    &kp DELETE       &none    &none    &none    &trans
+&none   &trans                &kp LEFT_BRACE         &kp RIGHT_BRACE  &kp COMMA         &kp DOT            &kp UNDERSCORE  &none             &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &none    &none    &trans
+&trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH       &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &trans          &trans           &trans   &trans   &none
+&trans  &trans                &trans                 &trans           &trans            &trans             &trans
             >;
         };
 
         reset_boot {
             bindings = <
- &none       &reset  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &none  &bootloader  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &tog 3
- &none       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &trans  &trans  &trans  &trans  &trans  &trans
+&none   &sys_reset   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&none   &bootloader  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &tog 3
+&none   &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         lock_layer {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none   &none   &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none   &none  &trans
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none   &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none   &none   &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none   &trans
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &trans
 &none  &none  &none  &none  &none  &none  &none
             >;
@@ -53,11 +53,11 @@
 
         NUMBER_LAYER {
             bindings = <
- &none  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &none  &trans  &trans  &trans  &trans  &trans        &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans  &trans  &trans  &trans
- &none  &trans  &trans  &trans  &trans  &trans        &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans  &trans  &trans
+&none   &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans
+&none   &trans  &trans  &trans  &trans  &trans  &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans  &trans  &trans  &trans
+&none   &trans  &trans  &trans  &trans  &trans  &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
